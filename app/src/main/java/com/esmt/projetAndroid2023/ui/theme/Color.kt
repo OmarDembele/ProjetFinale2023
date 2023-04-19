@@ -1,4 +1,4 @@
-package com.learnandroid.loginapplication.ui.theme
+package com.learnandroid.projetAndroid2023.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.learnandroid.loginapplication.composables
+package com.esmt.projetAndroid2023.presentation
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.ScrollableColumn
@@ -26,11 +26,12 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.navigate
-import com.learnandroid.loginapplication.R
-import com.learnandroid.loginapplication.ui.theme.primaryColor
-import com.learnandroid.loginapplication.ui.theme.whiteBackground
+import com.learnandroid.projetAndroid2023.R
+import com.learnandroid.projetAndroid2023.ui.theme.primaryColor
+import com.learnandroid.projetAndroid2023.ui.theme.whiteBackground
 
 
+@OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun LoginPage(navController: NavController) {
 

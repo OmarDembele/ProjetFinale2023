@@ -1,4 +1,4 @@
-package com.learnandroid.loginapplication
+package com.esmt.projetAndroid2023
 
 import android.os.Bundle
 import android.view.WindowManager
@@ -8,9 +8,9 @@ import androidx.compose.ui.platform.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.learnandroid.loginapplication.composables.LoginPage
-import com.learnandroid.loginapplication.composables.RegisterPage
-import com.learnandroid.loginapplication.ui.theme.LoginApplicationTheme
+import com.esmt.projetAndroid2023.presentation.LoginPage
+import com.esmt.projetAndroid2023.presentation.RegisterPage
+import com.learnandroid.projetAndroid2023.ui.theme.LoginApplicationTheme
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

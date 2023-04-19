@@ -1,4 +1,4 @@
-package com.learnandroid.loginapplication.composables
+package com.esmt.projetAndroid2023.presentation
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.ScrollableColumn
@@ -26,10 +26,11 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.navigate
-import com.learnandroid.loginapplication.R
-import com.learnandroid.loginapplication.ui.theme.primaryColor
-import com.learnandroid.loginapplication.ui.theme.whiteBackground
+import com.learnandroid.projetAndroid2023.R
+import com.learnandroid.projetAndroid2023.ui.theme.primaryColor
+import com.learnandroid.projetAndroid2023.ui.theme.whiteBackground
 
+@OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun RegisterPage(navController: NavController) {
 
@@ -37,12 +38,12 @@ fun RegisterPage(navController: NavController) {
 
     val nameValue = remember { mutableStateOf("") }
     val emailValue = remember { mutableStateOf("") }
-    val phoneValue = remember { mutableStateOf("") }
+    //val phoneValue = remember { mutableStateOf("") }
     val passwordValue = remember { mutableStateOf("") }
-    val confirmPasswordValue = remember { mutableStateOf("") }
+    //val confirmPasswordValue = remember { mutableStateOf("") }
 
     val passwordVisibility = remember { mutableStateOf(false) }
-    val confirmPasswordVisibility = remember { mutableStateOf(false) }
+    //val confirmPasswordVisibility = remember { mutableStateOf(false) }
 
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter) {
         Box(
@@ -97,7 +98,7 @@ fun RegisterPage(navController: NavController) {
                         modifier = Modifier.fillMaxWidth(0.8f)
                     )
 
-                    OutlinedTextField(
+                    /*OutlinedTextField(
                         value = phoneValue.value,
                         onValueChange = { phoneValue.value = it },
                         label = { Text(text = "Phone Number") },
@@ -105,7 +106,7 @@ fun RegisterPage(navController: NavController) {
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth(0.8f),
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone)
-                    )
+                    )*/
 
                     OutlinedTextField(
                         value = passwordValue.value,
@@ -128,7 +129,7 @@ fun RegisterPage(navController: NavController) {
                         else PasswordVisualTransformation()
                     )
 
-                    OutlinedTextField(
+                    /*OutlinedTextField(
                         value = confirmPasswordValue.value,
                         onValueChange = { confirmPasswordValue.value = it },
                         label = { Text(text = "Confirm Password") },
@@ -147,7 +148,7 @@ fun RegisterPage(navController: NavController) {
                         },
                         visualTransformation = if (confirmPasswordVisibility.value) VisualTransformation.None
                         else PasswordVisualTransformation()
-                    )
+                    )*/
                     Spacer(modifier = Modifier.padding(10.dp))
                     Button(onClick = { }, modifier = Modifier
                         .fillMaxWidth(0.8f)
